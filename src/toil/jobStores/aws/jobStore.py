@@ -985,7 +985,7 @@ class AWSJobStore(AbstractJobStore):
 
         @staticmethod
         def maxInlinedSize():
-            return 256
+            return 0
 
         def save(self):
             attributes, numNewContentChunks = self.toItem()
